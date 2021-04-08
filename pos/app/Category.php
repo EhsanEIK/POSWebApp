@@ -10,7 +10,7 @@ class Category extends Model
 
     public function Product()
     {
-    	return $this->has(Product::class);
+    	return $this->hasMany(Product::class);
     }
 
     public static function arrayForSelect()

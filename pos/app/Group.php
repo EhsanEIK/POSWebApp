@@ -10,7 +10,7 @@ class Group extends Model
 
     public function User()
     {
-    	return $this->has(User::class);
+    	return $this->hasMany(User::class);
     }
 
     public static function arrayForSelect()
